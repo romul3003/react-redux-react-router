@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-html, body {
+html, body, .root {
   height: 100%;
 }
 
@@ -16,4 +16,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
 }
