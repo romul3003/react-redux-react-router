@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
+import Profile from './components/Profile'
 import Home from './components/Home/Home'
+import Login from './components/Login'
 
 class App extends Component {
 	render() {
@@ -15,13 +17,13 @@ class App extends Component {
 								<Home />
 							</Route>
 							<Route path="/login">
-								<div>login</div>
+								<Login />
 							</Route>
 							<Route path="/news">
 								<div>news</div>
 							</Route>
 							<Route path="/profile">
-								<div>profile</div>
+								<Profile />
 							</Route>
 						</Switch>
 					</main>
