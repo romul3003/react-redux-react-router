@@ -16,7 +16,7 @@ class Header extends Component {
 		return (
 			<header>
 				<nav className="navbar navbar-dark navbar-expand-md bg-primary">
-					<div className="navbar-brand">Note app</div>
+					<div className="navbar-brand">Redux App</div>
 
 					<button
 						className="navbar-toggler"

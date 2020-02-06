@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d050388d-2c42-4c61-ab40-6fc27ffea4f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/sessionActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/LoginContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/session.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/session.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/configureStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +66,8 @@
       <recent name="D:\front-end\2020\react\tests\react-redux-react-router" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\front-end\2020\react\tests\react-redux-react-router\src" />
+      <recent name="D:\front-end\2020\react\tests\react-redux-react-router\src\containers" />
       <recent name="D:\front-end\2020\react\tests\react-redux-react-router\src\components\Home" />
       <recent name="D:\front-end\2020\react\tests\react-redux-react-router\src\components" />
       <recent name="D:\front-end\2020\react\tests\react-redux-react-router\src\components\Navigation" />
@@ -89,7 +102,8 @@
       <workItem from="1580833491707" duration="15410000" />
       <workItem from="1580904275948" duration="141000" />
       <workItem from="1580924903516" duration="51000" />
-      <workItem from="1580926091585" duration="3382000" />
+      <workItem from="1580926091585" duration="9707000" />
+      <workItem from="1581007901338" duration="10697000" />
     </task>
     <servers />
   </component>
@@ -105,29 +119,33 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="175" y="363" width="731" height="479" key="EditFileWatcherDialog/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580834476389" />
-    <state width="968" height="224" key="GridCell.Tab.0.bottom" timestamp="1580927208601">
+    <state width="958" height="224" key="GridCell.Tab.0.bottom" timestamp="1581015718008">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="968" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580927208601" />
-    <state width="968" height="224" key="GridCell.Tab.0.center" timestamp="1580927208600">
+    <state width="958" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718008" />
+    <state width="958" height="224" key="GridCell.Tab.0.center" timestamp="1581015718007">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="968" height="224" key="GridCell.Tab.0.center/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580927208600" />
-    <state width="968" height="224" key="GridCell.Tab.0.left" timestamp="1580927208600">
+    <state width="958" height="224" key="GridCell.Tab.0.center/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
+    <state width="958" height="224" key="GridCell.Tab.0.left" timestamp="1581015718007">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="968" height="224" key="GridCell.Tab.0.left/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580927208600" />
-    <state width="968" height="224" key="GridCell.Tab.0.right" timestamp="1580927208600">
+    <state width="958" height="224" key="GridCell.Tab.0.left/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
+    <state width="958" height="224" key="GridCell.Tab.0.right" timestamp="1581015718007">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="968" height="224" key="GridCell.Tab.0.right/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580927208600" />
+    <state width="958" height="224" key="GridCell.Tab.0.right/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
     <state x="7" y="227" key="SettingsEditor" timestamp="1580833953784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="7" y="227" key="SettingsEditor/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580833953784" />
+    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1581008536266">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581008536266" />
   </component>
 </project>
