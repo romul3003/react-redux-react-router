@@ -24,6 +24,11 @@ const Navigation = () => {
 					Profile
 				</NavLink>
 			</li>
+			<li className="nav-item text-center">
+				<NavLink className="nav-link" to="/nonexistent-page">
+					Nonexistent page
+				</NavLink>
+			</li>
 		</ul>
 	)
 }
