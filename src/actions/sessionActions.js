@@ -6,7 +6,7 @@ export const login = (params, cb) => dispatch => {
 		dispatch({
 			type: LOG_IN,
 			payload: {
-				name: params.name,
+				name: params.username,
 			},
 		})
 		cb()

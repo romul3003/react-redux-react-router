@@ -5,6 +5,7 @@ import Home from './components/Home/Home'
 import LoginContainer from './containers/LoginContainer'
 import ProfileContainer from './containers/ProfileContainer'
 import NotFound from './components/NotFound'
+import PrivateRoute from './containers/PrivateRoute'
 
 class App extends Component {
 	render() {
@@ -18,7 +19,7 @@ class App extends Component {
 						<Route path="/news">
 							<div>news</div>
 						</Route>
-						<Route path="/profile" component={ProfileContainer} />
+						<PrivateRoute path="/profile" component={ProfileContainer} />
 						<Route component={NotFound} />
 					</Switch>
 				</main>
