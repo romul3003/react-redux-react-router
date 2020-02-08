@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d050388d-2c42-4c61-ab40-6fc27ffea4f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/newsActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NewsContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/NewsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/network.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/sessionActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/sessionActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -41,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../learning-react/webForMySelf-react-course/redux-theory-app" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -108,33 +116,37 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="175" y="363" width="731" height="479" key="EditFileWatcherDialog/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580834476389" />
-    <state width="958" height="224" key="GridCell.Tab.0.bottom" timestamp="1581015718008">
+    <state x="291" y="339" key="FileChooserDialogImpl" timestamp="1581114675305">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="291" y="339" key="FileChooserDialogImpl/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581114675305" />
+    <state width="976" height="222" key="GridCell.Tab.0.bottom" timestamp="1581109030586">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="958" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718008" />
-    <state width="958" height="224" key="GridCell.Tab.0.center" timestamp="1581015718007">
+    <state width="976" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581109030586" />
+    <state width="976" height="222" key="GridCell.Tab.0.center" timestamp="1581109030586">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="958" height="224" key="GridCell.Tab.0.center/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
-    <state width="958" height="224" key="GridCell.Tab.0.left" timestamp="1581015718007">
+    <state width="976" height="222" key="GridCell.Tab.0.center/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581109030586" />
+    <state width="976" height="222" key="GridCell.Tab.0.left" timestamp="1581109030586">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="958" height="224" key="GridCell.Tab.0.left/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
-    <state width="958" height="224" key="GridCell.Tab.0.right" timestamp="1581015718007">
+    <state width="976" height="222" key="GridCell.Tab.0.left/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581109030586" />
+    <state width="976" height="222" key="GridCell.Tab.0.right" timestamp="1581109030586">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580904416787" />
-    <state width="958" height="224" key="GridCell.Tab.0.right/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581015718007" />
+    <state width="976" height="222" key="GridCell.Tab.0.right/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581109030586" />
     <state x="7" y="227" key="SettingsEditor" timestamp="1580833953784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="7" y="227" key="SettingsEditor/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1580833953784" />
-    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1581008536266">
+    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1581107976980">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581008536266" />
+    <state x="165" y="260" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160/1920.258.1920.1040@0.0.1920.1160" timestamp="1581107976980" />
   </component>
 </project>
