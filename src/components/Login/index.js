@@ -22,6 +22,11 @@ class Login extends Component {
 				this.setState({ redirectToPreviousRoute: true })
 			}
 		)
+
+		this.setState({
+			username: '',
+			password: '',
+		})
 	}
 
 	handleChange = e => {
@@ -47,7 +52,7 @@ class Login extends Component {
 			<div className="container">
 				<form className="mt-3" onSubmit={this.handleSubmit}>
 					<div className="form-group">
-						{errorMsg && <p>{errorMsg}</p>}
+						{errorMsg && <p className="text-danger">{errorMsg}</p>}
 						<label htmlFor="name">Name</label>
 						<input
 							type="text"
