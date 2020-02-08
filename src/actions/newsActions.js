@@ -45,30 +45,3 @@ export function getNews() {
 			})
 	}
 }
-
-// 	fetch('https://mysterious-reef-29460.herokuapp.com/api/v1/news', {
-// 		method: 'GET',
-// 	})
-// 		.then((response) => {
-// 			if (!response.ok) {
-// 				throw Error(response.statusText);
-// 			}
-//
-// 			dispatch(getNewsLoading(false));
-//
-// 			return response;
-// 		})
-// 		.then(response => response.json())
-// 		.then((json) => {
-// 			if (json.status === 'ok') {
-// 				dispatch(getNewsSuccess(json.data));
-// 			} else if (json.status === 'err') {
-// 				dispatch(getNewsErrored(json.message));
-// 			}
-// 		})
-// 		.catch((error) => {
-// 			dispatch(getNewsLoading(false));
-// 			dispatch(getNewsErrored(error.message));
-// 		});
-// };
-// }
